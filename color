@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+
+print("""
+1- RED
+2- BLUE
+3- GREEN
+4- YELLOW
+5- PURPLE
+6- TURQUOISE
+7- GREY
+8- BACK NORMAL
+- - - - - - - -
+   BACKGROUND
+- - - - - - - -
+9- RED BACKGROUND
+10- GREEN BACKGROUND
+11- ORANGE BACKGROUND
+12- BLUE BACKGROUND
+13- PURPLE BACKGROUND
+14- TURQUOISE BACKGROUND
+15- GREY BACKGROUND
+16- WHİTE BACKGROUND
+""")
+
+red='91'
+blue='94'
+green='92'
+yellow='93'
+purple='95'
+turquoise='96'
+grey='90'
+white='0'
+
+code = {'1':'91','2':'94','3':'92','4':'93', '5':'95', '6':'96', '7':'90', '8':'0', '9':'41', '10':'42', '11':'43', '12':'44', '13':'45', '14':'46', '15':'47', '16':'7'}
+name = ['RED','BLUE','GREEN', 'YELLOW', 'PURPLE', 'TURQUOISE', 'GREY', 'WHİTE', 'RED BACKGROUND','GREEN BACKGROUND','ORANGE BACKGROUND',
+'BLUE BACKGROUND', 'PURPLE BACKGROUND', 'TURQUOISE BACKGROUND', 'GREY BACKGROUND', 'WHİTE BACKGROUND']
+
+color = int(input("> "))
+
+if color > 0 and color <= 16:
+	print(f"\033[{code[str(color)]}m {name[color-1]} was chosen !")
+
+else:
+	print('\033[1m'+"Wrong Input"+'\033[0m')
