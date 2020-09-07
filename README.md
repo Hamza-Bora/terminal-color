@@ -1,5 +1,7 @@
 # terminal-color
 
+#you must be on root !
+
 sudo -s
 
 git clone https://github.com/Hamza-Bora/terminal-color
